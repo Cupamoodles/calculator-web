@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="icon" href="../Icons/logo.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+    <script src='../main.js'></script>
+</head>
+
+<body>
+    <!-- Side Navigation Menu -->
+    <div id="sideMenu" class="sidenav">
+        <a href="javascript:void(0)" onclick="closeNav()"><img id="close-menu" src="../Icons/close-svgrepo-com.svg" /></a>
+        <a class="sidetext" href="../index.html">Home</a>
+        <a class="sidetext" href="javascript:void(0)" onclick="closeNav()">Calculator</a>
+        <a class="sidetext" href="basevalue.html">Base Value Converter</a>
+        <a class="sidetext" href="../scientific.html">Scientific Converter</a>
+        <a class="sidetext" href="about.html">About the creator</a>
+    </div>
+    <!-- End Side Navigation Menu -->
+    <!-- Top Navigation Bar -->
+    <nav class="navbar background">
+        <!-- Left Side of Navigation Bar -->
+        <div class="leftNav">
+            <div class="nav-list">
+                <a onclick="openNav()"><img id="hamburger-menu" src="../Icons/burger-menu-svgrepo-com.svg" /></a>
+            </div>
+        </div>
+        <!-- End Left Side of Navigation Bar -->
+        <!-- Right Side of Navigation Bar -->
+        <div class="rightNav">
+            <div class="nav-list">
+                <a href="javascript:void(0)">Calculator</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Converter</button>
+                    <div class="dropdown-content">
+                        <a href="basevalue.html">Bases</a>
+                        <a href="scientific.html">Scientific</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+        <!-- End Right Side of Navigation Bar -->
+    </nav>
+    <!-- End Top Navigation Bar -->
+
+    <!-- Calculator -->
+    <table class="calculator">
+        <tr>
+            <td colspan="3"> <input class="display" type="text" id="result" disabled /> </td>
+            <!-- clearScreen() function -->
+            <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+        </tr>
+        <tr>
+            <!-- display() function displays the value of clicked button -->
+            <td> <input type="button" value="1" onclick="display('1')" /> </td>
+            <td> <input type="button" value="2" onclick="display('2')" /> </td>
+            <td> <input type="button" value="3" onclick="display('3')" /> </td>
+            <td> <input type="button" value="/" onclick="display('/')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="display('4')" /> </td>
+            <td> <input type="button" value="5" onclick="display('5')" /> </td>
+            <td> <input type="button" value="6" onclick="display('6')" /> </td>
+            <td> <input type="button" value="-" onclick="display('-')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="7" onclick="display('7')" /> </td>
+            <td> <input type="button" value="8" onclick="display('8')" /> </td>
+            <td> <input type="button" value="9" onclick="display('9')" /> </td>
+            <td> <input type="button" value="+" onclick="display('+')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="." onclick="display('.')" /> </td>
+            <td> <input type="button" value="0" onclick="display('0')" /> </td>
+
+            <!-- calculate() function evaluates the mathematical expression -->
+            <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+            <td> <input type="button" value="*" onclick="display('*')" /> </td>
+        </tr>
+    </table>
+    </table>
+</body>
+
+</html>
