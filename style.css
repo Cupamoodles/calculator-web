@@ -1,0 +1,229 @@
+/* Color Palette
+BLACK: #0A0908
+BLUE: #22333B
+WHITE: #F2F4F3
+LIGHT BROWN: #A9927D
+BROWN: #5E503F
+*/
+
+
+/* Main Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #F2F4F3;
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: 'abeezeeregular';
+    src: url('Fonts/abeezee-regular-webfont.woff2') format('woff2'), url('Fonts/abeezee-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Top Navigation Bar */
+
+.navbar {
+    display: flex;
+    /*Sticky Nav*/
+    position: sticky;
+    align-items: left;
+    justify-content: space-between;
+    top: 0px;
+}
+
+#hamburger-menu {
+    width: 24px;
+    margin: -5px;
+    background-color: #A9927D;
+    cursor: pointer;
+}
+
+.nav-list {
+    width: 50%;
+    display: flex;
+    background-color: #A9927D;
+}
+
+.nav-list a {
+    list-style: none;
+    padding: 26px 30px;
+    font-family: 'abeezeeregular';
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #F2F4F3;
+    background-color: #A9927D;
+}
+
+#close-menu {
+    padding: 12px 8px 8px 30px;
+    width: 18px;
+    background-color: #A9927D;
+}
+
+.rightNav {
+    margin-right: 30px;
+    background-color: #A9927D;
+}
+
+.rightNav a:hover {
+    color: #22333b;
+    transition: 0.5s;
+}
+
+.background {
+    background: #A9927D;
+    background-size: cover;
+}
+
+
+/* Dropdown Buttons and Menu */
+
+.dropbtn {
+    outline: none;
+    background-color: #A9927D;
+    border: none;
+    font-family: 'abeezeeregular';
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #F2F4F3;
+}
+
+.dropbtn:hover {
+    cursor: pointer;
+    color: #22333b;
+    transition: 0.5s;
+}
+
+.dropdown {
+    margin-top: 25px;
+    color: #F2F4F3;
+    text-decoration: none;
+    background-color: #A9927D;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #A9927D;
+    min-width: 100px;
+    z-index: 1;
+    margin-top: 25px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #F2F4F3;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #A9927D;
+}
+
+.dropdown-content a:hover {
+    color: #22333b;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Side Navigation Bar */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #A9927D;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 12px;
+}
+
+.sidenav a {
+    display: block;
+    transition: 0.3s;
+    background-color: #A9927D;
+}
+
+.sidetext {
+    padding: 16px 8px 8px 30px;
+    font-family: 'abeezeeregular';
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #F2F4F3;
+}
+
+.sidenav a:hover {
+    color: #22333b;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* Calculator */
+
+.calculator {
+    padding: 0px;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+.display {
+    font-family: 'abeezeeregular';
+    background-color: #A9927D;
+    border: none;
+    color: #F2F4F3;
+    border-radius: 10px;
+    width: 90%;
+    height: 65%;
+}
+
+#btn {
+    background-color: #22333b;
+}
+
+#btn:active {
+    background-color: #5E503F;
+}
+
+input[type=button] {
+    font-family: 'abeezeeregular';
+    font-size: 18px;
+    background-color: #A9927D;
+    color: #F2F4F3;
+    border: none;
+    width: 50px;
+    border-radius: 100px;
+    height: 50px;
+    outline: none;
+}
+
+input:active[type=button] {
+    background: #5E503F;
+}
