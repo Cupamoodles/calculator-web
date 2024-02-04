@@ -186,12 +186,21 @@ BROWN: #5E503F
 
 /* Calculator */
 
+.calculator-frame {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: #5E503F;
+    border-radius: 20px;
+}
+
 .calculator {
     padding: 0px;
     height: fit-content;
     width: fit-content;
     margin: auto;
     text-align: center;
+    background-color: #5E503F;
 }
 
 .display {
@@ -204,8 +213,20 @@ BROWN: #5E503F
     height: 65%;
 }
 
+td {
+    background-color: #5E503F;
+}
+
 #btn {
+    height: 100%;
+    width: 100%;
     background-color: #22333b;
+    border-radius: 50px;
+}
+
+#zbtn {
+    height: 100%;
+    width: 100%;
 }
 
 #btn:active {
